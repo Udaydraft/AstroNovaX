@@ -38,6 +38,17 @@ export function IconPoultry(props) {
   );
 }
 
+export function IconAnimal(props) {
+  return (
+    <svg viewBox="0 0 48 48" fill="none" {...props}>
+      <path d="M14 20C14 16 18 12 24 12C30 12 34 16 34 20C34 26 28 32 24 38C20 32 14 26 14 20Z" stroke="currentColor" strokeWidth="2.2" strokeLinejoin="round" />
+      <circle cx="16" cy="12" r="3" fill="currentColor" />
+      <circle cx="32" cy="12" r="3" fill="currentColor" />
+      <circle cx="24" cy="20" r="2.5" fill="currentColor" />
+    </svg>
+  );
+}
+
 export function IconVision(props) {
   return (
     <svg viewBox="0 0 48 48" fill="none" {...props}>
@@ -79,6 +90,7 @@ export const ICON_MAP = {
   fishery: IconFishery,
   health: IconHealth,
   poultry: IconPoultry,
+  animal: IconAnimal,
   vision: IconVision,
   predict: IconPredict,
   edge: IconEdge,

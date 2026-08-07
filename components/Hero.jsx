@@ -9,12 +9,12 @@ export default function Hero() {
         <div>
           <Eyebrow>Applied AI &amp; Machine Learning</Eyebrow>
           <h1 className="font-display font-semibold text-4xl sm:text-5xl lg:text-6xl leading-[1.05] tracking-tight">
-            Intelligence for the <span className="brand-text">field</span>, the{" "}
-            <span className="brand-text">water</span>, the <span className="brand-text">ward</span>, and the{" "}
-            <span className="brand-text">flock</span>.
+            Intelligence for <span className="brand-text">healthcare</span>,{" "}
+            <span className="brand-text">animal science</span>, and{" "}
+            <span className="brand-text">agriculture</span>.
           </h1>
           <p className="mt-6 text-lg max-w-xl" style={{ color: "var(--ink-soft)" }}>
-            AstraNovaX designs AI and ML systems for agriculture, fishery, healthcare, and poultry — models trained
+            AstraNovaX designs AI and ML systems for healthcare, animal science, and agriculture — models trained
             on real operational data, delivered as tools your team already knows how to use.
           </p>
           <div className="mt-9 flex flex-wrap gap-4">

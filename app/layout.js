@@ -26,23 +26,26 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata = {
   metadataBase: new URL("https://www.astranovax.com"),
   title: {
-    default: "AstraNovaX | AI & ML for Agriculture, Fishery, Healthcare & Poultry",
+    default: "AstraNovaX | AI & ML for Healthcare, Animal Science & Agriculture",
     template: "%s | AstraNovaX",
   },
   description:
-    "AstraNovaX builds applied AI and machine-learning systems for agriculture, fishery, healthcare, and poultry — turning field, water, ward, and flock data into decisions. Innovating beyond limits.",
+    "AstraNovaX builds applied AI and machine-learning systems for Healthcare, Animal Science, and Agriculture — turning clinical, livestock, crop, and soil data into decisions. Innovating beyond limits.",
   keywords: [
     "AstraNovaX",
-    "AI for agriculture",
-    "AI for fishery",
-    "aquaculture AI",
-    "AI in healthcare",
-    "poultry AI",
-    "machine learning company",
-    "agri-tech AI",
-    "precision farming AI",
-    "smart poultry monitoring",
+    "Healthcare AI",
+    "AI in Healthcare",
+    "Animal Science AI",
+    "Livestock AI",
+    "AI for Agriculture",
+    "Precision Agriculture AI",
+    "Machine Learning Company",
   ],
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
   authors: [{ name: "AstraNovaX" }],
   robots: { index: true, follow: true },
   alternates: { canonical: "/" },
@@ -50,15 +53,15 @@ export const metadata = {
     type: "website",
     url: "https://www.astranovax.com/",
     siteName: "AstraNovaX",
-    title: "AstraNovaX | AI & ML for Agriculture, Fishery, Healthcare & Poultry",
+    title: "AstraNovaX | AI & ML for Healthcare, Animal Science & Agriculture",
     description:
-      "Applied AI and machine-learning systems for agriculture, fishery, healthcare, and poultry. Innovating beyond limits.",
+      "Applied AI and machine-learning systems for Healthcare, Animal Science, and Agriculture. Innovating beyond limits.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AstraNovaX | AI & ML for Agriculture, Fishery, Healthcare & Poultry",
+    title: "AstraNovaX | AI & ML for Healthcare, Animal Science & Agriculture",
     description:
-      "Applied AI and machine-learning systems for agriculture, fishery, healthcare, and poultry. Innovating beyond limits.",
+      "Applied AI and machine-learning systems for Healthcare, Animal Science, and Agriculture. Innovating beyond limits.",
   },
 };
 
@@ -80,16 +83,15 @@ const organizationJsonLd = {
   url: "https://www.astranovax.com/",
   slogan: "Innovating Beyond Limits",
   description:
-    "AstraNovaX designs applied AI and machine-learning systems for agriculture, fishery, healthcare, and poultry.",
+    "AstraNovaX designs applied AI and machine-learning systems for Healthcare, Animal Science, and Agriculture.",
   email: "mailto:hello@astranovax.com",
   areaServed: "Global",
   knowsAbout: [
     "Artificial Intelligence",
     "Machine Learning",
-    "Precision Agriculture",
-    "Aquaculture Technology",
     "Healthcare AI",
-    "Poultry Farm Automation",
+    "Animal Science AI",
+    "Precision Agriculture",
   ],
 };
 
@@ -102,7 +104,7 @@ const faqJsonLd = {
       name: "What does AstraNovaX do?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "AstraNovaX builds applied artificial intelligence and machine-learning systems that turn sensor, imagery, and operational data into decisions for agriculture, fishery, healthcare, and poultry businesses.",
+        text: "AstraNovaX builds applied artificial intelligence and machine-learning systems that turn sensor, imagery, and operational data into decisions for Healthcare, Animal Science, and Agriculture businesses.",
       },
     },
     {
@@ -110,7 +112,7 @@ const faqJsonLd = {
       name: "Which industries does AstraNovaX serve?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "AstraNovaX focuses on four domains: agriculture (crop and soil intelligence), fishery and aquaculture (water and stock monitoring), healthcare (diagnostic and operational support), and poultry (flock health and yield forecasting).",
+        text: "AstraNovaX focuses on three core domains: Healthcare (diagnostic & operational support), Animal Science (herd health & yield forecasting), and Agriculture (crop & soil intelligence).",
       },
     },
     {

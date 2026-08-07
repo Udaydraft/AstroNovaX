@@ -8,7 +8,7 @@ export default function Domains() {
       <div className="max-w-6xl mx-auto">
         <Eyebrow>Where we work</Eyebrow>
         <h2 className="font-display font-semibold text-3xl sm:text-4xl max-w-2xl">
-          Four domains, one modelling discipline.
+          Three core domains, one modelling discipline.
         </h2>
         <p className="mt-4 max-w-2xl" style={{ color: "var(--ink-soft)" }}>
           Each sector gets models trained on its own conditions — not a repackaged general-purpose product.

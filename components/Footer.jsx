@@ -31,7 +31,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="mt-4 max-w-sm text-sm" style={{ color: "var(--ink-soft)" }}>
-              Applied AI and machine-learning systems for agriculture, fishery, healthcare, and poultry.
+              Applied AI and machine-learning systems for healthcare, animal science, and agriculture.
               Innovating beyond limits.
             </p>
             <div className="mt-6 space-y-3 text-sm">
