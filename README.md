@@ -1,10 +1,7 @@
-# AstraNovaX — premium science/AI landing page
+# AstraNovaX — Next.js site
 
-React + TypeScript + Vite + Tailwind CSS + Framer Motion. No backend.
-
-> Brand: **AstraNovaX** — "Innovating Beyond Limits." Logo, colors, loader,
-> and background watermark all come from the brand assets provided (see
-> `public/images/astranovax-logo.png`).
+Applied AI/ML marketing site for Agriculture, Fishery, Healthcare, and Poultry.
+Built with Next.js (App Router) + Tailwind CSS. No backend/database — fully static/client.
 
 ## Getting started
 
