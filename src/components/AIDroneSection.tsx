@@ -47,13 +47,14 @@ export default function AIDroneSection() {
       className="relative overflow-hidden py-16 sm:py-24"
     >
       <BgVideo src={AI_DRONE_VIDEO_SRC} />
-      {/* scrim overlay */}
-      <div className="absolute inset-0 -z-10 bg-offwhite/80 sm:bg-gradient-to-r sm:from-offwhite/95 sm:via-offwhite/85 sm:to-offwhite/50 dark:bg-navy/85 dark:sm:bg-gradient-to-r dark:sm:from-navy/95 dark:sm:via-navy/90 dark:sm:to-navy/70" />
+      {/* Dark scrim overlay for high contrast and readability across both light & dark themes */}
+      <div className="absolute inset-0 -z-10 bg-navy/70 sm:bg-gradient-to-r sm:from-navy/90 sm:via-navy/80 sm:to-navy/55" />
 
       <div className="container relative flex flex-col gap-10">
         <div className="flex flex-col items-center text-center">
           <SectionHeading
             align="center"
+            tone="light"
             label="Specialized Capabilities"
             heading="AI Data Intelligence & Drone Services"
             description="Combining cutting-edge artificial intelligence, custom machine learning pipelines, and advanced drone & satellite imaging analysis for actionable operational decisions on astronavax.org."
@@ -61,7 +62,7 @@ export default function AIDroneSection() {
           />
         </div>
 
-        {/* Compact Feature Cards Grid */}
+        {/* Compact Feature Cards Grid with White Text */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -74,22 +75,22 @@ export default function AIDroneSection() {
             return (
               <AnimatedCard
                 key={s.title}
-                className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-navy/10 bg-surface/85 p-5 shadow-card backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-cyan/40 hover:shadow-soft dark:border-white/15 dark:bg-surface/60"
+                className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-white/15 bg-navy/60 p-5 shadow-card backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-cyan/40 hover:shadow-soft"
               >
                 <div>
                   <div className="flex items-center justify-between">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan/15 text-cyan shadow-sm transition-transform duration-300 group-hover:scale-105">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan/20 text-cyan shadow-sm transition-transform duration-300 group-hover:scale-105">
                       <Icon className="h-5 w-5" strokeWidth={1.75} />
                     </div>
-                    <span className="rounded-full bg-navy/5 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-navy-soft dark:bg-white/10 dark:text-white/80">
+                    <span className="rounded-full bg-white/10 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-cyan">
                       {s.badge}
                     </span>
                   </div>
 
-                  <h3 className="mt-4 font-display text-lg font-bold text-navy dark:text-white">
+                  <h3 className="mt-4 font-display text-lg font-bold text-white">
                     {s.title}
                   </h3>
-                  <p className="mt-2 text-xs leading-relaxed text-navy-soft dark:text-ink-soft">
+                  <p className="mt-2 text-xs leading-relaxed text-white/80">
                     {s.description}
                   </p>
                 </div>
@@ -98,7 +99,7 @@ export default function AIDroneSection() {
           })}
         </motion.div>
 
-        {/* Compact Highlight Banner */}
+        {/* Highlight Banner Block */}
         <motion.div
           initial="hidden"
           whileInView="visible"

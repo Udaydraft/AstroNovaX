@@ -9,7 +9,7 @@ type Props = {
   children: ReactNode;
   className?: string;
   href?: string;
-  onClick?: () => void;
+  onClick?: (e?: any) => void;
   type?: "button" | "submit";
 };
 
@@ -33,7 +33,7 @@ export default function Button({
 
   if (href) {
     return (
-      <motion.a href={href} className={cls} {...motionProps}>
+      <motion.a href={href} onClick={onClick} className={cls} {...motionProps}>
         {children}
         {icon}
       </motion.a>

@@ -10,10 +10,10 @@ type Props = {
 };
 
 /**
- * Optimized full-bleed background video component:
+ * Optimized section background video component:
  * - Lazy loads video data only when approaching the viewport (200px pre-fetch margin)
  * - Automatically pauses playback when scrolled out of view to save GPU/battery
- * - Prevents layout shifts and horizontal scroll overflow
+ * - Restricts max video height on mobile view so background videos don't over-zoom on tall stacked sections
  */
 export default function BgVideo({ src, eager = false, className = "" }: Props) {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -47,11 +47,11 @@ export default function BgVideo({ src, eager = false, className = "" }: Props) {
   }, [inView, shouldLoad]);
 
   return (
-    <div ref={wrapperRef} className="absolute inset-0 -z-10 overflow-hidden max-w-full">
+    <div ref={wrapperRef} className="absolute inset-0 -z-10 flex items-center justify-center overflow-hidden max-w-full">
       {!errored && (shouldLoad || eager) ? (
         <video
           ref={videoRef}
-          className={`h-full w-full object-cover pointer-events-none ${className}`}
+          className={`h-full w-full object-cover object-center max-sm:max-h-[65vh] max-sm:w-auto max-sm:max-w-full max-sm:scale-95 pointer-events-none transition-transform duration-300 ${className}`}
           autoPlay={eager}
           muted
           loop
