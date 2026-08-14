@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #FBF7EE;
+  --surface: #FFFFFF;
+  --ink: #2A1A47;
+  --ink-soft: #6B5C8C;
+  --ink-muted: #8B7CAE;
+
+  --tint-purple: #F1E9FB;
+  --tint-purple-deep: #E4D4F7;
+  --tint-amber: #FCEFDD;
+  --tint-amber-deep: #F8DFC0;
+
+  --accent-1: #8B2FD1;
+  --accent-1b: #C026D3;
+  --accent-1-soft: #C79BEF;
+  --accent-2: #F59E0B;
+  --accent-2-soft: #FBC873;
+}
+
+[data-theme="dark"] {
+  --bg: #140A28;
+  --surface: #211238;
+  --ink: #F5EFE2;
+  --ink-soft: #C7B7E6;
+  --ink-muted: #A895CC;
+
+  --tint-purple: #2A1650;
+  --tint-purple-deep: #341C63;
+  --tint-amber: #2B1C10;
+  --tint-amber-deep: #3A2513;
+
+  --accent-1: #A66BF0;
+  --accent-1b: #E879F9;
+  --accent-1-soft: #D6B3F7;
+  --accent-2: #FBBF24;
+  --accent-2-soft: #FDD98A;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-offwhite text-navy font-body antialiased;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+h1, h2, h3, h4 {
+  @apply font-display;
+}
+
+::selection {
+  background: theme("colors.cyan.DEFAULT");
+  color: white;
+}
+
+.focus-ring {
+  @apply outline-none focus-visible:ring-2 focus-visible:ring-cyan focus-visible:ring-offset-2 focus-visible:ring-offset-offwhite;
+}
+
+.animate-float {
+  animation: floatY 3s ease-in-out infinite;
+}
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

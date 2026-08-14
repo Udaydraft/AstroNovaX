@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AstraNovaX | AI, Machine Learning &amp; Drone Services | astronavax.org</title>
+    <meta
+      name="description"
+      content="AstraNovaX (astronovax.org) builds advanced AI models, machine learning solutions, data pipelines, and drone &amp; satellite imaging analysis for healthcare, animal science, and agriculture."
+    />
+    <meta
+      name="keywords"
+      content="AstraNovaX, astronavax.org, AI Data Intelligence, Drone Services, Machine Learning Solutions, Healthcare AI, Animal Science AI, Smart Agriculture AI, Satellite Imaging Analysis, AI Model Development"
+    />
+    <meta name="author" content="AstraNovaX" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://astronovax.org/" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://astronovax.org/" />
+    <meta property="og:site_name" content="AstraNovaX" />
+    <meta property="og:title" content="AstraNovaX | AI, Data Intelligence &amp; Drone Services" />
+    <meta property="og:description" content="AstraNovaX delivers AI models, machine learning pipelines, and drone imaging analytics for healthcare, animal science, and precision agriculture." />
+    <meta property="og:image" content="https://astronovax.org/images/astranovax-logo.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://astronovax.org/" />
+    <meta name="twitter:title" content="AstraNovaX | AI, Machine Learning &amp; Drone Services" />
+    <meta name="twitter:description" content="Innovating Beyond Limits. Advanced AI models, drone imaging, and predictive telemetry on astronavax.org." />
+    <meta name="twitter:image" content="https://astronovax.org/images/astranovax-logo.png" />
+
+    <link rel="icon" type="image/png" href="/images/astranovax-logo.png" />
+    <link rel="apple-touch-icon" href="/images/astranovax-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AEO & SEO Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://astronovax.org/#organization",
+            "name": "AstraNovaX",
+            "url": "https://astronovax.org/",
+            "logo": "https://astronovax.org/images/astranovax-logo.png",
+            "description": "AstraNovaX designs applied AI, enterprise machine learning pipelines, and drone & satellite imaging analysis for healthcare, animal science, and agriculture.",
+            "slogan": "Innovating Beyond Limits"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://astronovax.org/#website",
+            "url": "https://astronovax.org/",
+            "name": "AstraNovaX",
+            "publisher": {
+              "@id": "https://astronovax.org/#organization"
+            }
+          },
+          {
+            "@type": "Service",
+            "@id": "https://astronovax.org/#service-ai-drone",
+            "name": "AI Data Intelligence & Drone Services",
+            "provider": {
+              "@id": "https://astronovax.org/#organization"
+            },
+            "serviceType": "Artificial Intelligence & Drone Imaging Analysis",
+            "description": "Custom AI model development, data engineering pipelines, predictive machine learning, and drone/satellite spatial imaging analysis."
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://astronovax.org/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is AstraNovaX (astronovax.org)?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AstraNovaX (astronovax.org) is an applied AI and Machine Learning enterprise focused on AI model development, data engineering pipelines, drone & satellite imaging analysis, healthcare clinical intelligence, livestock telemetry, and smart agriculture."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What services does AstraNovaX provide?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AstraNovaX offers 4 primary solution pillars: 1. Healthcare AI (Clinical intelligence & risk stratification), 2. Animal Science (Livestock & herd intelligence), 3. Smart Agriculture (Field & crop analytics), and 4. AI & Drone Services (AI Model Development, Data Engineering, ML Solutions, Drone & Satellite Imaging Analysis)."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <script>
+      // Runs before paint so the saved/preferred theme applies with no flash.
+      (function () {
+        try {
+          var saved = localStorage.getItem("anx-theme");
+          var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
