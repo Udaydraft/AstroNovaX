@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X, Sun, Moon } from "lucide-react";
-import { NAV_LINKS, SITE_NAME } from "@/data/site";
+import { NAV_LINKS } from "@/data/site";
 import Button from "@/components/ui/Button";
+import Logo from "@/components/Logo";
 import { useTheme } from "@/context/ThemeContext";
 
 export default function Navbar() {
@@ -53,10 +54,9 @@ export default function Navbar() {
         <a
           href="#top"
           onClick={(e) => handleNavClick(e, "#top")}
-          className="focus-ring flex items-center gap-2.5 rounded-full font-display text-lg font-bold text-navy dark:text-white"
+          className="focus-ring rounded-full"
         >
-          <img src="/images/astranovax-logo.png" alt={SITE_NAME} className="h-8 w-8 object-contain" />
-          {SITE_NAME}
+          <Logo iconClassName="h-8 w-8" textClassName="text-xl sm:text-2xl font-bold tracking-tight" />
         </a>
 
         {/* Desktop Links */}

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Eyebrow from "@/components/Eyebrow";
 import BgVideo from "@/components/BgVideo";
@@ -14,11 +14,12 @@ export default function Hero() {
       id="top"
       className="relative overflow-hidden pb-24 pt-40 sm:pb-32 sm:pt-48"
     >
-      <BgVideo src={HERO_CAROUSEL_VIDEO_SRC} eager />
-
+      <div className="py-0">
+        <BgVideo src={HERO_CAROUSEL_VIDEO_SRC} eager />
+      </div>
       {/* scrim: translucent on mobile to let video show through, gradient on desktop */}
-      <div className="absolute inset-0 -z-10 bg-offwhite/50 sm:bg-gradient-to-r sm:from-offwhite sm:via-offwhite/85 sm:to-offwhite/10" />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-offwhite via-transparent to-offwhite/40" />
+      <div className="absolute inset-0 -z-10 bg-offwhite/30 sm:bg-gradient-to-r sm:from-offwhite sm:via-offwhite/85 sm:to-offwhite/10" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-offwhite via-transparent to-offwhite/30" />
 
       <div className="container relative">
         <motion.div
@@ -31,7 +32,7 @@ export default function Hero() {
             variants={fadeUp}
             className="text-4xl font-bold leading-[1.08] tracking-tight text-navy sm:text-5xl lg:text-[3.4rem]"
           >
-            <div>
+            <div className="text-white">
               <Eyebrow>Applied AI &amp; Machine Learning</Eyebrow>
               <h1 className="font-display font-semibold text-4xl sm:text-5xl lg:text-6xl leading-[1.05] tracking-tight">
                 Intelligence for <span className="brand-text">healthcare</span>,{" "}
@@ -39,8 +40,8 @@ export default function Hero() {
                 <span className="brand-text">agriculture</span>.
               </h1>
               <p
-                className="mt-6 text-lg max-w-xl"
-                style={{ color: "var(--ink-soft)" }}
+                className="mt-8 mb-6 text-lg max-w-xl [word-spacing:0.4em] text-white  dark:text-navy-soft"
+                // style={{ color: "var(--ink-soft)" }}
               >
                 AstraNovaX designs AI and ML systems for healthcare, animal
                 science, and agriculture — models trained on real operational

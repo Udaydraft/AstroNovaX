@@ -9,7 +9,7 @@ export const SITE_TAGLINE = "Innovating Beyond Limits";
  * figure, all rendered in the brand's purple-to-orange palette) — used as
  * the hero's full-bleed background video.
  */
-export const HERO_CAROUSEL_VIDEO_SRC = "/videos/hero-carousel3.mp4";
+export const HERO_CAROUSEL_VIDEO_SRC = "/videos/hero-carousel4.mp4";
 export const HERO_VIDEO_SRC = HERO_CAROUSEL_VIDEO_SRC;
 
 /**

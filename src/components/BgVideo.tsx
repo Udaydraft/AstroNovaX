@@ -47,7 +47,7 @@ export default function BgVideo({ src, eager = false, className = "" }: Props) {
   }, [inView, shouldLoad]);
 
   return (
-    <div ref={wrapperRef} className="absolute inset-0 -z-10 flex items-center justify-center overflow-hidden max-w-full">
+    <div ref={wrapperRef} className="absolute inset-0 -z-10 flex items-center justify-center overflow-hidden w-full h-full max-w-full">
       {!errored && (shouldLoad || eager) ? (
         <video
           ref={videoRef}
