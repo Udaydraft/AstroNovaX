@@ -71,7 +71,7 @@ export default function Impact() {
           <div className="flex overflow-hidden">
             <motion.div
               animate={{ x: ["0%", "-50%"] }}
-              transition={{ duration: 52, repeat: Infinity, ease: "linear" }}
+              transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
               className="flex whitespace-nowrap"
             >
               {IMPACT_WORDS_1.concat(IMPACT_WORDS_1, IMPACT_WORDS_1).map((w, idx) => (
