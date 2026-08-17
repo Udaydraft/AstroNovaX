@@ -28,7 +28,7 @@ export default function Home() {
         <MarqueeBanner />
         <IntroSection />
         <Solutions />
-        <Ecosystem />
+        {/* <Ecosystem /> */}
         <Healthcare />
         <AnimalScience />
         <Agriculture />

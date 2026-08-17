@@ -9,7 +9,7 @@ export const SITE_TAGLINE = "Innovating Beyond Limits";
  * figure, all rendered in the brand's purple-to-orange palette) — used as
  * the hero's full-bleed background video.
  */
-export const HERO_CAROUSEL_VIDEO_SRC = "/videos/hero-carousel.mp4";
+export const HERO_CAROUSEL_VIDEO_SRC = "/videos/hero-carousel3.mp4";
 export const HERO_VIDEO_SRC = HERO_CAROUSEL_VIDEO_SRC;
 
 /**
@@ -30,7 +30,7 @@ export const LOGO_WATERMARK_SRC = "/images/astranovax-logo.png";
 export const NAV_LINKS = [
   { label: "Home", href: "#top" },
   { label: "Solutions", href: "#solutions" },
-  { label: "About", href: "#about" },
   { label: "Impact", href: "#impact" },
+  { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
