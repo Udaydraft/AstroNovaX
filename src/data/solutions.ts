@@ -5,9 +5,10 @@ export type Solution = {
   number: string;
   icon: LucideIcon;
   title: string;
-  tag:string,
+  tag: string;
+  href: string;
   description: string;
-  points:string[];
+  points: string[];
 };
 
 export const SOLUTIONS: Solution[] = [
@@ -16,6 +17,7 @@ export const SOLUTIONS: Solution[] = [
     icon: HeartPulse,
     title: "Healthcare",
     tag: "Clinical intelligence",
+    href: "#healthcare",
     description:
       "Decision-support and predictive models that help clinical and operational teams triage, screen, and plan care pathways with confidence.",
     points: [
@@ -23,13 +25,13 @@ export const SOLUTIONS: Solution[] = [
       "Patient risk stratification",
       "Clinical resource & capacity planning",
     ],
-
   },
   {
     number: "02",
     icon: PawPrint,
     title: "Animal Science",
     tag: "Livestock & Herd intelligence",
+    href: "#animal-science",
     description:
       "Continuous herd and flock monitoring that turns physiological, sound, and movement telemetry into early health and yield alerts.",
     points: [
@@ -43,6 +45,7 @@ export const SOLUTIONS: Solution[] = [
     icon: Sprout,
     title: "Smart Agriculture",
     tag: "Field & Crop intelligence",
+    href: "#agriculture",
     description:
       "Crop-health and soil models built from satellite, drone, and sensor data so growers act before problems spread.",
     points: [
@@ -55,14 +58,15 @@ export const SOLUTIONS: Solution[] = [
     number: "04",
     icon: PlaneTakeoff,
     title: "AI & Drone",
-    tag:"AI Data Intelligence & Drone Services",
+    tag: "AI Data Intelligence & Drone Services",
+    href: "#ai-drone",
     description:
       "Turning complex scientific data into intelligent insights and actionable decisions.",
-    points:[
+    points: [
       "AI model development",
       "Data Engineering & Pipeline Development",
       "Machine Learning Solutions",
       "Drone & Satellite Imaging Analysis",
-    ]
+    ],
   },
 ];
