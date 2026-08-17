@@ -47,6 +47,7 @@ export default function Agriculture() {
         <div className="flex flex-col items-center text-center">
           <SectionHeading
             align="center"
+            tone="light"
             label="Smart Agriculture"
             heading="Field & Crop Intelligence for Sustainable Farming"
             description="Transforming multispectral aerial imaging, satellite data, and soil telemetry into actionable insights so growers protect crops and optimize harvest yields."
@@ -74,7 +75,7 @@ export default function Agriculture() {
                     <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-leaf/20 text-leaf shadow-sm transition-transform duration-300 group-hover:scale-105">
                       <Icon className="h-5 w-5" strokeWidth={1.75} />
                     </div>
-                    <span className="rounded-full bg-navy/5 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-navy-soft dark:bg-white/10 dark:text-white/80">
+                    <span className="rounded-full bg-navy/5 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-navy dark:bg-white/50 dark:text-black">
                       {f.badge}
                     </span>
                   </div>
@@ -82,7 +83,7 @@ export default function Agriculture() {
                   <h3 className="mt-4 font-display text-lg font-bold text-navy dark:text-white">
                     {f.title}
                   </h3>
-                  <p className="mt-2 text-xs leading-relaxed text-navy-soft dark:text-ink-soft">
+                  <p className="mt-2 text-sm leading-relaxed text-navy dark:text-black">
                     {f.desc}
                   </p>
                 </div>
@@ -101,14 +102,14 @@ export default function Agriculture() {
         >
           <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-2xl space-y-2.5">
-              <div className="inline-flex items-center gap-2 rounded-full bg-cyan/20 px-3 py-0.5 text-[11px] font-bold uppercase tracking-widest text-cyan">
+              <div className="inline-flex items-center gap-2 rounded-full bg-cyan/20 px-3 py-0.5 text-[11px] font-bold uppercase tracking-widest text-cyan dark:text-white">
                 <Sparkles size={13} />
                 <span>Precision Agronomy</span>
               </div>
               <h3 className="font-display text-xl font-bold leading-tight sm:text-2xl text-white">
                 Bridging Remote Sensing & Machine Learning in the Field
               </h3>
-              <p className="text-xs leading-relaxed text-white/85 sm:text-sm">
+              <p className="text-sm leading-relaxed text-white/85 dark:text-black">
                 AstraNovaX algorithms process soil and atmospheric data streams alongside drone multispectral imaging to give growers real-time operational clarity.
               </p>
             </div>

@@ -22,7 +22,7 @@ export default function MarqueeBanner() {
       <div className="flex overflow-hidden">
         <motion.div
           animate={{ x: ["0%", "-50%"] }}
-          transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+          transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
           className="flex whitespace-nowrap"
         >
           {MARQUEE_ITEMS.concat(MARQUEE_ITEMS, MARQUEE_ITEMS, MARQUEE_ITEMS).map((item, idx) => (

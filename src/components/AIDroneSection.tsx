@@ -82,15 +82,15 @@ export default function AIDroneSection() {
                     <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan/20 text-cyan shadow-sm transition-transform duration-300 group-hover:scale-105">
                       <Icon className="h-5 w-5" strokeWidth={1.75} />
                     </div>
-                    <span className="rounded-full bg-white/10 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-cyan">
+                    <span className="rounded-full bg-white/10 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white dark:text-black">
                       {s.badge}
                     </span>
                   </div>
 
-                  <h3 className="mt-4 font-display text-lg font-bold text-white">
+                  <h3 className="mt-4 font-display text-lg font-bold text-navy">
                     {s.title}
                   </h3>
-                  <p className="mt-2 text-xs leading-relaxed text-white/80">
+                  <p className="mt-2 text-sm leading-relaxed text-white/80">
                     {s.description}
                   </p>
                 </div>
@@ -119,8 +119,8 @@ export default function AIDroneSection() {
               <h3 className="font-display text-xl font-bold leading-tight sm:text-2xl text-white">
                 Empowering Healthcare, Agriculture & Animal Science with Aerial & Spatial AI
               </h3>
-              <p className="text-xs leading-relaxed text-white/85 sm:text-sm">
-                At <strong className="text-white">AstraNovaX (astronovax.org)</strong>, we integrate drone multispectral telemetry, autonomous satellite mapping, and enterprise AI model engineering to deliver high-precision intelligence directly to your command dashboards.
+              <p className="text-sm leading-relaxed text-white/85 dark:text-black">
+                At <strong className="text-white dark:text-black">AstraNovaX (astronovax.org)</strong>, we integrate drone multispectral telemetry, autonomous satellite mapping, and enterprise AI model engineering to deliver high-precision intelligence directly to your command dashboards.
               </p>
             </div>
 

@@ -8,6 +8,8 @@ type Props = {
   align?: "left" | "center";
   tone?: "dark" | "light";
   className?: string;
+  headingClassName?: string;
+  descClassName?: string;
 };
 
 export default function SectionHeading({
@@ -17,11 +19,13 @@ export default function SectionHeading({
   align = "left",
   tone = "dark",
   className = "",
+  headingClassName,
+  descClassName,
 }: Props) {
   const { fadeUp, viewport } = useScrollAnimation();
   const alignCls = align === "center" ? "text-center items-center mx-auto" : "text-left items-start";
-  const headingColor = tone === "dark" ? "text-navy" : "text-white";
-  const descColor = tone === "dark" ? "text-navy-soft" : "text-white/70";
+  const headingColor = headingClassName || (tone === "dark" ? "text-navy dark:text-white" : "text-white");
+  const descColor = descClassName || (tone === "dark" ? "text-navy-soft dark:text-white/80" : "text-white");
 
   return (
     <motion.div

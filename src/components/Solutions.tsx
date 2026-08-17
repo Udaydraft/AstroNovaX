@@ -44,12 +44,12 @@ export default function Solutions() {
                 >
                   {s.tag}
                 </span>
-                <p className="mt-2 text-xs leading-relaxed text-navy-soft dark:text-ink-soft">
+                <p className="mt-2 text-sm leading-relaxed text-navy-soft dark:text-ink-soft">
                   {s.description}
                 </p>
                 <ul className="mt-4 space-y-1.5">
                   {s.points.map((p) => (
-                    <li key={p} className="flex items-start gap-2 text-xs">
+                    <li key={p} className="flex items-start gap-2 text-sm">
                       <span
                         className="mt-1 h-1.5 w-1.5 rounded-full shrink-0 bg-amber-500"
                         style={{ backgroundColor: "var(--accent-2, #F59E0B)" }}

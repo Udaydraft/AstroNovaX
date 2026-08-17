@@ -50,6 +50,8 @@ export default function Healthcare() {
             label="Healthcare"
             heading="Clinical Intelligence & Technology with Purpose"
             description="Combining clinical expertise, patient data pipelines, and intelligent machine learning to support better decision-making and healthier human outcomes."
+            headingClassName="text-navy"
+            descClassName="text-black"
             className="mx-auto max-w-3xl"
           />
         </div>
@@ -74,7 +76,7 @@ export default function Healthcare() {
                     <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan/15 text-cyan shadow-sm transition-transform duration-300 group-hover:scale-105">
                       <Icon className="h-5 w-5" strokeWidth={1.75} />
                     </div>
-                    <span className="rounded-full bg-navy/5 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-navy-soft dark:bg-white/10 dark:text-white/80">
+                    <span className="rounded-full bg-navy/5 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white">
                       {f.badge}
                     </span>
                   </div>
@@ -82,7 +84,7 @@ export default function Healthcare() {
                   <h3 className="mt-4 font-display text-lg font-bold text-navy dark:text-white">
                     {f.title}
                   </h3>
-                  <p className="mt-2 text-xs leading-relaxed text-navy-soft dark:text-ink-soft">
+                  <p className="mt-2 text-sm leading-relaxed text-black">
                     {f.desc}
                   </p>
                 </div>
@@ -108,7 +110,7 @@ export default function Healthcare() {
               <h3 className="font-display text-xl font-bold leading-tight sm:text-2xl text-white">
                 Empowering Medical Staff with Reliable Clinical Insights
               </h3>
-              <p className="text-xs leading-relaxed text-white/85 sm:text-sm">
+              <p className="text-sm leading-relaxed text-white/85">
                 Our healthcare algorithms operate on operational and clinical telemetry, delivering early disease warnings, automated risk assessments, and streamlined patient workflows.
               </p>
             </div>

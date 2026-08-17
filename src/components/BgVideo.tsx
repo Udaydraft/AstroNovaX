@@ -51,7 +51,7 @@ export default function BgVideo({ src, eager = false, className = "" }: Props) {
       {!errored && (shouldLoad || eager) ? (
         <video
           ref={videoRef}
-          className={`h-full w-full object-cover object-center max-sm:max-h-[65vh] max-sm:w-auto max-sm:max-w-full max-sm:scale-95 pointer-events-none transition-transform duration-300 ${className}`}
+          className={`h-full w-full object-cover object-center pointer-events-none transition-transform duration-300 ${className}`}
           autoPlay={eager}
           muted
           loop

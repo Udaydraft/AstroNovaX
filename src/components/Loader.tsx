@@ -41,7 +41,7 @@ export default function Loader() {
           preload="auto"
           className="h-full w-full object-contain"
         >
-          <source src="/videos/loader-transparent.webm" type="video/webm" />
+          <source src="/videos/loader.webm" type="video/webm" />
         </video>
       </div>
       <p className="mt-1 font-display text-lg tracking-[0.4em] text-navy uppercase">

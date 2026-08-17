@@ -75,7 +75,7 @@ export default function AnimalScience() {
                     <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan/20 text-cyan shadow-sm transition-transform duration-300 group-hover:scale-105">
                       <Icon className="h-5 w-5" strokeWidth={1.75} />
                     </div>
-                    <span className="rounded-full bg-white/10 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-cyan">
+                    <span className="rounded-full bg-white/10 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white">
                       {f.badge}
                     </span>
                   </div>
@@ -83,7 +83,7 @@ export default function AnimalScience() {
                   <h3 className="mt-4 font-display text-lg font-bold text-white">
                     {f.title}
                   </h3>
-                  <p className="mt-2 text-xs leading-relaxed text-white/80">
+                  <p className="mt-2 text-sm leading-relaxed text-white/80">
                     {f.desc}
                   </p>
                 </div>
@@ -109,7 +109,7 @@ export default function AnimalScience() {
               <h3 className="font-display text-xl font-bold leading-tight sm:text-2xl text-white">
                 Protecting Herd Health and Maximizing Sustainable Yields
               </h3>
-              <p className="text-xs leading-relaxed text-white/85 sm:text-sm">
+              <p className="text-sm leading-relaxed text-white/85">
                 AstraNovaX transforms physical animal telemetry into predictive insights, preventing disease outbreaks and optimizing feed conversion efficiency.
               </p>
             </div>
