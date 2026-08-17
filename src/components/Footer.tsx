@@ -15,7 +15,7 @@ export default function Footer() {
             <img
               src="/images/astranovax-full-logo.png"
               alt={SITE_NAME}
-              className="h-9 sm:h-11 w-auto object-contain dark:brightness-110"
+              className="h-11 sm:h-11 w-auto object-contain dark:brightness-110"
             />
           </a>
           <p className="max-w-xs text-sm text-navy-soft">
