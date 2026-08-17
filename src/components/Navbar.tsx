@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X, Sun, Moon } from "lucide-react";
-import { NAV_LINKS } from "@/data/site";
+import { NAV_LINKS, SITE_NAME } from "@/data/site";
 import Button from "@/components/ui/Button";
-import Logo from "@/components/Logo";
 import { useTheme } from "@/context/ThemeContext";
 
 export default function Navbar() {
@@ -30,7 +29,10 @@ export default function Navbar() {
     };
   }, [open]);
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
     setOpen(false);
     if (href.startsWith("#")) {
       const targetElement = document.querySelector(href);
@@ -54,9 +56,13 @@ export default function Navbar() {
         <a
           href="#top"
           onClick={(e) => handleNavClick(e, "#top")}
-          className="focus-ring rounded-full"
+          className="focus-ring flex items-center rounded-full"
         >
-          <Logo iconClassName="h-8 w-8" textClassName="text-xl sm:text-2xl font-bold tracking-tight" />
+          <img
+            src="/images/astranovax-full-logo.png"
+            alt={SITE_NAME}
+            className="h-11 sm:h-12 md:h-14 w-auto object-contain dark:brightness-110"
+          />
         </a>
 
         {/* Desktop Links */}
@@ -81,7 +87,11 @@ export default function Navbar() {
           >
             {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
           </button>
-          <Button href="#contact" variant="primary" className="hidden sm:inline-flex">
+          <Button
+            href="#contact"
+            variant="primary"
+            className="hidden sm:inline-flex"
+          >
             Get Started
           </Button>
 
@@ -123,7 +133,9 @@ export default function Navbar() {
                   href="#contact"
                   variant="primary"
                   className="w-full justify-center py-3 text-center"
-                  onClick={(e: React.MouseEvent<HTMLAnchorElement>) => handleNavClick(e, "#contact")}
+                  onClick={(e: React.MouseEvent<HTMLAnchorElement>) =>
+                    handleNavClick(e, "#contact")
+                  }
                 >
                   Get Started
                 </Button>

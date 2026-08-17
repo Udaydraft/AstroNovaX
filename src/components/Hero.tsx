@@ -32,7 +32,7 @@ export default function Hero() {
             variants={fadeUp}
             className="text-4xl font-bold leading-[1.08] tracking-tight text-navy sm:text-5xl lg:text-[3.4rem]"
           >
-            <div className="text-white">
+            <div className="mb-4">
               <Eyebrow>Applied AI &amp; Machine Learning</Eyebrow>
               <h1 className="font-display font-semibold text-4xl sm:text-5xl lg:text-6xl leading-[1.05] tracking-tight">
                 Intelligence for <span className="brand-text">healthcare</span>,{" "}
@@ -40,7 +40,7 @@ export default function Hero() {
                 <span className="brand-text">agriculture</span>.
               </h1>
               <p
-                className="mt-8 mb-6 text-lg max-w-xl [word-spacing:0.4em] text-white  dark:text-navy-soft"
+                className="mt-8 mb-6 text-lg max-w-xl [word-spacing:0.4em] text-black dark:text-navy-soft"
                 // style={{ color: "var(--ink-soft)" }}
               >
                 AstraNovaX designs AI and ML systems for healthcare, animal

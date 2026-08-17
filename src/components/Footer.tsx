@@ -2,7 +2,6 @@ import { Mail } from "lucide-react";
 import { NAV_LINKS, SITE_NAME, SITE_TAGLINE } from "@/data/site";
 import { SOLUTIONS } from "@/data/solutions";
 import { WhatsAppIcon, XIcon, LinkedInIcon } from "@/components/ContactWidget";
-import Logo from "@/components/Logo";
 
 export default function Footer() {
   return (
@@ -13,7 +12,11 @@ export default function Footer() {
             href="#top"
             className="flex w-fit items-center rounded-full"
           >
-            <Logo iconClassName="h-8 w-8" textClassName="text-xl font-bold tracking-tight" />
+            <img
+              src="/images/astranovax-full-logo.png"
+              alt={SITE_NAME}
+              className="h-9 sm:h-11 w-auto object-contain dark:brightness-110"
+            />
           </a>
           <p className="max-w-xs text-sm text-navy-soft">
             Intelligent technology across healthcare, animal science,
