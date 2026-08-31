@@ -120,7 +120,7 @@ export default function AIDroneSection() {
                 Empowering Healthcare, Agriculture & Animal Science with Aerial & Spatial AI
               </h3>
               <p className="text-sm leading-relaxed text-white/85 dark:text-black">
-                At <strong className="text-white dark:text-black">AstraNovaX (astronovax.org)</strong>, we integrate drone multispectral telemetry, autonomous satellite mapping, and enterprise AI model engineering to deliver high-precision intelligence directly to your command dashboards.
+                At <strong className="text-white dark:text-black">AstraNovaX (astranovax.in)</strong>, we integrate drone multispectral telemetry, autonomous satellite mapping, and enterprise AI model engineering to deliver high-precision intelligence directly to your command dashboards.
               </p>
             </div>
 

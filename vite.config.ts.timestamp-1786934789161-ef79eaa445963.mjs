@@ -1,8 +1,8 @@
 // vite.config.ts
-import { defineConfig } from "file:///C:/Users/vsFolder/AstroNovaX/node_modules/vite/dist/node/index.js";
-import react from "file:///C:/Users/vsFolder/AstroNovaX/node_modules/@vitejs/plugin-react/dist/index.js";
+import { defineConfig } from "file:///C:/Users/vsFolder/AstraNovaX/node_modules/vite/dist/node/index.js";
+import react from "file:///C:/Users/vsFolder/AstraNovaX/node_modules/@vitejs/plugin-react/dist/index.js";
 import path from "path";
-var __vite_injected_original_dirname = "C:\\Users\\vsFolder\\AstroNovaX";
+var __vite_injected_original_dirname = "C:\\Users\\vsFolder\\AstraNovaX";
 var vite_config_default = defineConfig({
   plugins: [react()],
   resolve: {

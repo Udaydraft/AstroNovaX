@@ -71,7 +71,7 @@ export default function Footer() {
             >
               <Mail size={16} className="text-navy-muted" />
               <span>
-                {import.meta.env.VITE_EMAIL || "astronovax@gmail.com"}
+                {import.meta.env.VITE_EMAIL || "astranovax@gmail.com"}
               </span>
             </a>
 
@@ -98,7 +98,7 @@ export default function Footer() {
               </a>
 
               <a
-                href={`mailto:${import.meta.env.VITE_EMAIL || "astronovax@gmail.com"}`}
+                href={`mailto:${import.meta.env.VITE_EMAIL || "astranovax@gmail.com"}`}
                 aria-label="Email Us"
                 title="Email Us"
                 className="focus-ring flex h-9 w-9 items-center justify-center rounded-full bg-cyan/10 text-navy hover:bg-cyan hover:text-navy transition-all"
