@@ -13,8 +13,8 @@ export default defineConfig(({ mode }) => {
       },
     },
     define: {
-      "import.meta.env.EMAIL": JSON.stringify(env.EMAIL || "astranovax@gmail.com"),
-      "import.meta.env.WHATSAPP": JSON.stringify(env.WHATSAPP || "918148811007"),
+      "import.meta.env.EMAIL": JSON.stringify(env.EMAIL),
+      "import.meta.env.WHATSAPP": JSON.stringify(env.WHATSAPP),
     },
     build: {
       rollupOptions: {
