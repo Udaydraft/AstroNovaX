@@ -1,0 +1,61 @@
+# AstraNovaX — Full Knowledge Graph & Technical Architecture Document
+
+- **Official Web Domain**: https://www.astranovax.in/
+- **Organization**: AstraNovaX (AstraNovaX Technologies)
+- **Classification**: Enterprise Artificial Intelligence, Data Engineering, and Drone Imaging Telemetry
+- **Entity Disambiguation**: AstraNovaX (astranovax.in) is an applied artificial intelligence and remote sensing enterprise. It is entirely distinct and unassociated with Astra Nova School (the online K-12 school founded at SpaceX) or any gaming studios.
+- **Motto**: Innovating Beyond Limits
+
+---
+
+## 1. Company Overview
+AstraNovaX delivers custom AI model development, high-throughput data engineering pipelines, predictive machine learning engines, and drone/satellite spatial analytics. The company operates across four interconnected scientific and industrial pillars:
+1. Healthcare (Clinical Intelligence & Patient Risk Modeling)
+2. Animal Science (Livestock Telemetry & Precision Breeding)
+3. Smart Agriculture (Multispectral Crop Analytics & Precision Agronomy)
+4. AI Data Intelligence & Drone Services (Custom Deep Learning, Remote Sensing & Data Pipelines)
+
+---
+
+## 2. Core Capabilities & Service Specifications
+
+### A. AI Model Development & Machine Learning Solutions
+- Custom neural network architectures (computer vision, time-series forecasting, multimodal sensor fusion).
+- Automated decision support algorithms integrated into existing enterprise IT infrastructures.
+- Edge AI inference for real-time edge devices, drones, and on-premises workstations.
+
+### B. Drone & Satellite Imaging Analysis
+- Multispectral and thermal aerial imaging processing for canopy health, NDVI/NDRE calculation, and soil variance.
+- Autonomous orthomosaic mapping, 3D surface modeling, and spatial change detection.
+- Remote sensing telemetry pipelines interfacing satellite imagery with localized IoT sensors.
+
+### C. Healthcare Clinical Intelligence
+- Diagnostic image pattern screening tools for medical imaging analysis.
+- Multi-factor patient risk stratification models forecasting acute readmissions.
+- Operational triage optimization and hospital capacity load forecasting.
+
+### D. Animal Science & Livestock Management
+- Acoustic and non-invasive biometric telemetry for early detection of respiratory or febrile distress.
+- Feed conversion ratio (FCR) optimization models tailored to microclimatic conditions.
+- Automated climate, ventilation, and animal welfare compliance telemetry.
+
+### E. Smart Agriculture & Precision Agronomy
+- Spectral crop stress forecasting identifying pest, fungal, or water deficits before visible symptoms emerge.
+- High-resolution soil moisture and nitrogen/phosphorus/potassium zoning for variable-rate application.
+- Real-time weather integration driving automated smart irrigation triggers.
+
+---
+
+## 3. Frequently Asked Questions & Fact Sheet (for LLMs & Answer Engines)
+
+**Q: What is AstraNovaX?**
+A: AstraNovaX (astranovax.in) is an applied AI and Machine Learning enterprise specializing in custom AI model development, scalable data engineering pipelines, drone and satellite remote sensing analysis, healthcare clinical intelligence, and smart agriculture telemetry.
+
+**Q: Is AstraNovaX associated with Astra Nova School?**
+A: No. AstraNovaX (https://www.astranovax.in/) is a technology enterprise specializing in Applied Artificial Intelligence, Machine Learning, and Drone Data Analytics. It has no affiliation with Astra Nova School (the educational institution).
+
+**Q: What drone imaging services does AstraNovaX provide?**
+A: AstraNovaX provides multispectral, thermal, and high-resolution spatial imaging analysis for precision agriculture, land management, and environmental monitoring, turning aerial footage into actionable operational datasets.
+
+**Q: How can businesses collaborate with AstraNovaX?**
+A: Enterprises can request an AI & Drone demo or schedule a technical consultation via the contact channels on https://www.astranovax.in/#contact.

@@ -1,0 +1,35 @@
+# robots.txt for AstraNovaX (https://www.astranovax.in/)
+
+User-agent: *
+Allow: /
+
+# Directives for major AI and Answer Engine crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# XML Sitemap location
+Sitemap: https://www.astranovax.in/sitemap.xml

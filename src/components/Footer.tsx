@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+﻿import { Mail } from "lucide-react";
 import { NAV_LINKS, SITE_NAME, SITE_TAGLINE } from "@/data/site";
 import { SOLUTIONS } from "@/data/solutions";
 import { WhatsAppIcon, XIcon, LinkedInIcon } from "@/components/ContactWidget";
@@ -15,6 +15,10 @@ export default function Footer() {
             <img
               src="/images/astranovax-full-logo.png"
               alt={SITE_NAME}
+              width="160"
+              height="44"
+              loading="lazy"
+              decoding="async"
               className="h-11 sm:h-11 w-auto object-contain dark:brightness-110"
             />
           </a>
@@ -66,7 +70,7 @@ export default function Footer() {
           </p>
           <div className="mt-4 flex flex-col gap-2.5">
             <a
-              href={`mailto:${import.meta.env.VITE_EMAIL}`}
+              href={`mailto:${import.meta.env.VITE_EMAIL || "astranovax@gmail.com"}`}
               className="focus-ring flex w-fit items-center gap-2 text-sm text-navy-soft hover:text-navy"
             >
               <Mail size={16} className="text-navy-muted" />
@@ -85,25 +89,25 @@ export default function Footer() {
               <span>Chat on WhatsApp</span>
             </a>
 
-            <div className="mt-2 flex items-center gap-2.5">
+            <div className="mt-2 flex items-center gap-3">
               <a
                 href={`https://wa.me/${import.meta.env.VITE_WHATSAPP}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
                 title="WhatsApp"
-                className="focus-ring flex h-9 w-9 items-center justify-center rounded-full bg-emerald-500/10 text-emerald-600 hover:bg-emerald-500 hover:text-white transition-all"
+                className="focus-ring flex h-11 w-11 min-h-[44px] min-w-[44px] items-center justify-center rounded-full bg-emerald-500/10 text-emerald-600 hover:bg-emerald-500 hover:text-white transition-all"
               >
-                <WhatsAppIcon className="h-4 w-4 fill-current" />
+                <WhatsAppIcon className="h-5 w-5 fill-current" />
               </a>
 
               <a
                 href={`mailto:${import.meta.env.VITE_EMAIL || "astranovax@gmail.com"}`}
                 aria-label="Email Us"
                 title="Email Us"
-                className="focus-ring flex h-9 w-9 items-center justify-center rounded-full bg-cyan/10 text-navy hover:bg-cyan hover:text-navy transition-all"
+                className="focus-ring flex h-11 w-11 min-h-[44px] min-w-[44px] items-center justify-center rounded-full bg-cyan/10 text-navy hover:bg-cyan hover:text-navy transition-all"
               >
-                <Mail size={16} />
+                <Mail size={18} />
               </a>
 
               <a
@@ -112,7 +116,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 aria-label="X (Twitter)"
                 title="X (Twitter)"
-                className="focus-ring flex h-9 w-9 items-center justify-center rounded-full bg-navy/5 text-navy-soft hover:bg-black hover:text-white transition-all dark:bg-white/10 dark:text-white dark:hover:bg-white dark:hover:text-black"
+                className="focus-ring flex h-11 w-11 min-h-[44px] min-w-[44px] items-center justify-center rounded-full bg-navy/5 text-navy-soft hover:bg-black hover:text-white transition-all dark:bg-white/10 dark:text-white dark:hover:bg-white dark:hover:text-black"
               >
                 <XIcon className="h-4 w-4 fill-current" />
               </a>
@@ -123,7 +127,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
                 title="LinkedIn"
-                className="focus-ring flex h-9 w-9 items-center justify-center rounded-full bg-[#0A66C2]/10 text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white transition-all"
+                className="focus-ring flex h-11 w-11 min-h-[44px] min-w-[44px] items-center justify-center rounded-full bg-[#0A66C2]/10 text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white transition-all"
               >
                 <LinkedInIcon className="h-4 w-4 fill-current" />
               </a>

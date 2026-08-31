@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+﻿import { useEffect, useState } from "react";
 import { SITE_NAME, SITE_TAGLINE } from "@/data/site";
 
 export default function Loader() {
@@ -10,11 +10,24 @@ export default function Loader() {
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
     setReducedMotion(mq.matches);
 
-    const a = setTimeout(() => setFading(true), 1900);
-    const b = setTimeout(() => setHidden(true), 2600);
+    // Optimized timing for mobile Core Web Vitals (FCP & LCP)
+    const a = setTimeout(() => setFading(true), 900);
+    const b = setTimeout(() => setHidden(true), 1400);
+
+    // Instant dismiss on user interaction
+    const handleInteract = () => {
+      setFading(true);
+      setTimeout(() => setHidden(true), 300);
+    };
+
+    window.addEventListener("touchstart", handleInteract, { passive: true, once: true });
+    window.addEventListener("scroll", handleInteract, { passive: true, once: true });
+
     return () => {
       clearTimeout(a);
       clearTimeout(b);
+      window.removeEventListener("touchstart", handleInteract);
+      window.removeEventListener("scroll", handleInteract);
     };
   }, []);
 
@@ -22,14 +35,14 @@ export default function Loader() {
 
   return (
     <div
-      className={`fixed inset-0 z-[100] flex flex-col mt-1 items-center justify-center bg-offwhite transition-opacity duration-700 ${
+      className={`fixed inset-0 z-[100] flex flex-col mt-1 items-center justify-center bg-offwhite transition-opacity duration-500 ${
         fading ? "pointer-events-none opacity-0" : "opacity-100"
       }`}
       role="status"
       aria-label={`Loading ${SITE_NAME}`}
     >
       <div
-        className={`relative flex h-40 w-40 items-center justify-center sm:h-48 sm:w-48 ${
+        className={`relative flex h-36 w-36 items-center justify-center sm:h-48 sm:w-48 ${
           reducedMotion ? "" : "animate-float"
         }`}
       >

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+﻿import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { NAV_LINKS, SITE_NAME } from "@/data/site";
@@ -61,6 +61,9 @@ export default function Navbar() {
           <img
             src="/images/astranovax-full-logo.png"
             alt={SITE_NAME}
+            width="180"
+            height="48"
+            decoding="async"
             className="h-11 sm:h-12 md:h-14 w-auto object-contain dark:brightness-110"
           />
         </a>
@@ -83,9 +86,9 @@ export default function Navbar() {
           <button
             aria-label="Toggle dark mode"
             onClick={toggleTheme}
-            className="focus-ring flex h-9 w-9 items-center justify-center rounded-full bg-surface text-navy shadow-card dark:bg-surface/80 dark:text-white dark:border dark:border-white/10"
+            className="focus-ring flex h-10 w-10 min-h-[44px] min-w-[44px] items-center justify-center rounded-full bg-surface text-navy shadow-card dark:bg-surface/80 dark:text-white dark:border dark:border-white/10"
           >
-            {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
+            {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
           </button>
           <Button
             href="#contact"
@@ -100,7 +103,7 @@ export default function Navbar() {
             aria-label="Toggle menu"
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
-            className="focus-ring flex h-10 w-10 items-center justify-center rounded-full text-navy dark:text-white md:hidden"
+            className="focus-ring flex h-10 w-10 min-h-[44px] min-w-[44px] items-center justify-center rounded-full text-navy dark:text-white md:hidden"
           >
             {open ? <X size={22} /> : <Menu size={22} />}
           </button>

@@ -1,0 +1,39 @@
+# AstraNovaX
+
+> Applied AI, Machine Learning, and Drone & Satellite Imaging Intelligence.
+> Official Website: https://www.astranovax.in/
+
+## Entity & Brand Identity
+- **Legal/Brand Name**: AstraNovaX (AstraNovaX Technologies)
+- **Domain**: https://www.astranovax.in/
+- **Disambiguation**: AstraNovaX is an enterprise artificial intelligence, data engineering, and drone remote sensing technology company. It is NOT affiliated with Astra Nova School (the online K-12 school) or Astra Nova gaming.
+- **Tagline**: Innovating Beyond Limits
+
+## Core Solution Pillars
+
+### 1. AI Data Intelligence & Drone Services
+- **AI Model Development**: Bespoke deep learning architectures and neural networks trained on proprietary enterprise and sensor data.
+- **Data Engineering & Scalable Pipelines**: Real-time multi-source data ingestion, cleansing, and streaming ETL pipelines.
+- **Machine Learning Solutions**: Predictive analytics, automated anomaly detection, and operational decision-support engines.
+- **Drone & Satellite Imaging Analysis**: Multispectral, hyperspectral, and RGB aerial mapping, remote sensing, and spatial telemetry.
+
+### 2. Healthcare & Clinical Intelligence
+- AI-assisted medical imaging screening and diagnostic assistance.
+- Patient risk stratification, readmission prediction, and longitudinal vitals tracking.
+- Clinical capacity, triage forecasting, and resource scheduling optimization.
+
+### 3. Animal Science & Livestock Intelligence
+- Early mortality and disease detection using acoustic and biometric telemetry.
+- Precision feeding and growth curve optimization.
+- Environmental controls, welfare monitoring, and genomics insights.
+
+### 4. Smart Agriculture & Precision Agronomy
+- Spectral crop stress, pest, and drought early warning detection.
+- Soil nutrient and moisture spatial zoning maps.
+- Hyperlocal automated irrigation scheduling and sustainability monitoring.
+
+## Contact & Inquiries
+- **Website**: https://www.astranovax.in/
+- **Contact Section**: https://www.astranovax.in/#contact
+- **LinkedIn**: https://linkedin.com/company/astranovax
+- **X (Twitter)**: https://x.com/astranovax
