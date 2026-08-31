@@ -1,8 +1,7 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { Mail } from "lucide-react";
-import Button from "@/components/ui/Button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { WhatsAppIcon, XIcon, LinkedInIcon } from "@/components/ContactWidget";
+import { WhatsAppIcon } from "@/components/ContactWidget";
 
 const PARTICLES = [
   { top: "20%", left: "12%" },
@@ -43,7 +42,7 @@ export default function CTA() {
 
         <div className="mt-2 flex flex-wrap items-center justify-center gap-4">
           <a
-            href={`https://wa.me/${import.meta.env.VITE_WHATSAPP}`}
+            href={`https://wa.me/${import.meta.env.WHATSAPP}`}
             target="_blank"
             rel="noopener noreferrer"
             className="focus-ring inline-flex items-center gap-2.5 rounded-full bg-[#25D366] px-6 py-3 text-sm font-bold text-white shadow-soft transition-all hover:bg-[#20ba5a] hover:shadow-card"
@@ -53,13 +52,13 @@ export default function CTA() {
           </a>
 
           <a
-            href={`mailto:${import.meta.env.VITE_EMAIL}`}
+            href={`mailto:${import.meta.env.EMAIL}`}
             className="focus-ring inline-flex items-center gap-2.5 rounded-full bg-navy px-6 py-3 text-sm font-bold text-white shadow-soft transition-all hover:bg-navy-soft hover:shadow-card dark:bg-white dark:text-purple-800"
           >
             <Mail className="h-5 w-5" />
             <span>Mail Us</span>
           </a>
-          </div>
+        </div>
       </motion.div>
     </section>
   );

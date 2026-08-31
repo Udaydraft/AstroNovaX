@@ -25,7 +25,7 @@ export function LinkedInIcon({ className = "h-4 w-4 fill-current" }: { className
   );
 }
 
-const WHATSAPP_NUM = import.meta.env.VITE_WHATSAPP || import.meta.env.WHATSAPP || "918148811007";
+const WHATSAPP_NUM = import.meta.env.WHATSAP;
 
 const CONTACT_ITEMS = [
   {

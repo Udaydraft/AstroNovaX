@@ -4,8 +4,8 @@ import { SOLUTIONS } from "@/data/solutions";
 import { WhatsAppIcon, XIcon, LinkedInIcon } from "@/components/ContactWidget";
 
 export default function Footer() {
-  const email = import.meta.env.VITE_EMAIL || import.meta.env.EMAIL || "astranovax@gmail.com";
-  const whatsapp = import.meta.env.VITE_WHATSAPP || import.meta.env.WHATSAPP || "918148811007";
+  const email = import.meta.env.EMAIL;
+  const whatsapp = import.meta.env.WHATSAPP;
 
   return (
     <footer className="border-t border-navy/5 bg-surface py-14">
