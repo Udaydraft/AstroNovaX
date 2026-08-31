@@ -22,7 +22,11 @@ export default function HeroVideo({ src = HERO_VIDEO_SRC, poster, className = ""
     <motion.div
       className={`relative overflow-hidden rounded-4xl shadow-soft ${className}`}
       animate={reduced ? undefined : { y: [0, -10, 0] }}
-      transition={reduced ? undefined : { duration: 6, repeat: Infinity, ease: "easeInOut" }}
+      transition={
+        reduced
+          ? undefined
+          : { duration: 6, repeat: Infinity, ease: "easeInOut" }
+      }
     >
       {!errored ? (
         <video
@@ -34,7 +38,7 @@ export default function HeroVideo({ src = HERO_VIDEO_SRC, poster, className = ""
           preload="metadata"
           poster={poster}
           onError={() => setErrored(true)}
-          aria-label="Nexora hero animation"
+          aria-label="AstraNovaX hero animation"
         >
           <source src={src} type="video/mp4" />
         </video>
