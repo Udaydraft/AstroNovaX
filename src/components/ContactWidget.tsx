@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { Mail } from "lucide-react";
 
 export function WhatsAppIcon({ className = "h-5 w-5 fill-current" }: { className?: string }) {
@@ -25,10 +25,12 @@ export function LinkedInIcon({ className = "h-4 w-4 fill-current" }: { className
   );
 }
 
+const WHATSAPP_NUM = import.meta.env.VITE_WHATSAPP || import.meta.env.WHATSAPP || "918148811007";
+
 const CONTACT_ITEMS = [
   {
     name: "WhatsApp",
-    href: `https://wa.me/${import.meta.env.WHATSAPP}`,
+    href: `https://wa.me/${WHATSAPP_NUM}`,
     color: "bg-[#25D366] text-white hover:bg-[#20ba5a]",
     icon: <WhatsAppIcon className="h-5 w-5 fill-current" />,
   },
@@ -44,10 +46,9 @@ export default function ContactWidget() {
           target={item.href.startsWith("http") ? "_blank" : undefined}
           rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
           aria-label={item.name}
-          title={item.name}
-          whileHover={{ scale: 1.15 }}
-          whileTap={{ scale: 0.92 }}
-          className={`flex h-11 w-11 items-center justify-center rounded-full shadow-soft transition-all ${item.color}`}
+          className={`flex h-12 w-12 items-center justify-center rounded-full shadow-soft transition-all ${item.color}`}
+          whileHover={{ scale: 1.08 }}
+          whileTap={{ scale: 0.95 }}
         >
           {item.icon}
         </motion.a>

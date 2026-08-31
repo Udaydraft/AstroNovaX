@@ -4,6 +4,9 @@ import { SOLUTIONS } from "@/data/solutions";
 import { WhatsAppIcon, XIcon, LinkedInIcon } from "@/components/ContactWidget";
 
 export default function Footer() {
+  const email = import.meta.env.VITE_EMAIL || import.meta.env.EMAIL || "astranovax@gmail.com";
+  const whatsapp = import.meta.env.VITE_WHATSAPP || import.meta.env.WHATSAPP || "918148811007";
+
   return (
     <footer className="border-t border-navy/5 bg-surface py-14">
       <div className="container grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
@@ -70,17 +73,17 @@ export default function Footer() {
           </p>
           <div className="mt-4 flex flex-col gap-2.5">
             <a
-              href={`mailto:${import.meta.env.VITE_EMAIL || "astranovax@gmail.com"}`}
+              href={`mailto:${email}`}
               className="focus-ring flex w-fit items-center gap-2 text-sm text-navy-soft hover:text-navy"
             >
               <Mail size={16} className="text-navy-muted" />
               <span>
-                {import.meta.env.EMAIL}
+                {email}
               </span>
             </a>
 
             <a
-              href={`https://wa.me/${import.meta.env.WHATSAPP}`}
+              href={`https://wa.me/${whatsapp}`}
               target="_blank"
               rel="noopener noreferrer"
               className="focus-ring flex w-fit items-center gap-2 text-sm font-medium text-emerald-600 dark:text-emerald-400 hover:underline"
@@ -91,7 +94,7 @@ export default function Footer() {
 
             <div className="mt-2 flex items-center gap-3">
               <a
-                href={`https://wa.me/${import.meta.env.WHATSAPP}`}
+                href={`https://wa.me/${whatsapp}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
@@ -102,7 +105,7 @@ export default function Footer() {
               </a>
 
               <a
-                href={`mailto:${import.meta.env.EMAIL || "astranovax@gmail.com"}`}
+                href={`mailto:${email}`}
                 aria-label="Email Us"
                 title="Email Us"
                 className="focus-ring flex h-11 w-11 min-h-[44px] min-w-[44px] items-center justify-center rounded-full bg-cyan/10 text-navy hover:bg-cyan hover:text-navy transition-all"
