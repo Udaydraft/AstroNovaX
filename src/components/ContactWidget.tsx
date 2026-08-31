@@ -28,7 +28,7 @@ export function LinkedInIcon({ className = "h-4 w-4 fill-current" }: { className
 const CONTACT_ITEMS = [
   {
     name: "WhatsApp",
-    href: `https://wa.me/${import.meta.env.VITE_WHATSAPP || "918148811007"}`,
+    href: `https://wa.me/${import.meta.env.WHATSAPP}`,
     color: "bg-[#25D366] text-white hover:bg-[#20ba5a]",
     icon: <WhatsAppIcon className="h-5 w-5 fill-current" />,
   },
